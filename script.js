@@ -1,5 +1,6 @@
 
 const messages = [
+  "Loading...",
   "Constructing Nodes",
   "Compiling Maslow's Hierarchy",
   "Setting Physical Constants",
@@ -8,6 +9,7 @@ const messages = [
   "Reticulating Splines",
   "Setting Maximum Velocity",
   "Loading \"BOING\" Sounds",
+  "Gleefully Stalling For Time",
   "Connecting Nodes",
   "Checking In The Back Of The Fridge",
   "Inverting Internets",
@@ -16,16 +18,16 @@ const messages = [
   "Scanning For Viruses",
   "Cubifying Splines",
   "Loading Loading Music",
+  "Happy April First!",
   "Watering Data Trees",
   "Connecting Nodes",
   "Harvesting Fruit From Data Trees",
-  "Happy April First!",
-  "Gleefully Stalling For Time",
   "Setting Universal Physical Constants",
   "Pruning Data Trees",
   "Setting Universal Constants of the Universe",
   "Look, It's Never Going To Load",
-  "That's The Point"
+  "That's The Point",
+  "Sorry lmao"
 ]
 
 
