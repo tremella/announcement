@@ -6,7 +6,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #faf8f0;
 }
 
 .container {
@@ -14,7 +14,7 @@ body, html {
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 70%;
     height: 100%;
     width: 100%;
 
@@ -73,6 +73,11 @@ body, html {
 
     .container {
         margin-top: 20%; /* Reduce the top margin on small screens */
+    }
+
+    .ball {
+        height:1.5em;
+        width:1.5em;
     }
 
     body, html {
