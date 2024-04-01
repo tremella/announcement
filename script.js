@@ -53,31 +53,32 @@ function showLoadingAnimation(){
   
 }
 
-let currentMessageIndex = 0
+let currentMessageIndex = 0;
 
 function showMessage() {
   const message = document.querySelector('.message');
   
-  // Immediately set the first message
-  // message.textContent = messages[currentMessageIndex];
-  message.textContent = ""
-  message.classList.add('message-transition'); // Start the fade-in and fade-out cycle
-
   function changeMessage() {
-    // Prepare to change the message by fading out
-    message.classList.add('message-transition');
-    // Change the message when fully faded out
+    // Fade out current message and prepare to change the message
+    message.classList.remove('message-transition'); // Make sure this triggers fade out
+    
     setTimeout(() => {
       currentMessageIndex = (currentMessageIndex + 1) % messages.length;
       message.textContent = messages[currentMessageIndex];
-    }, 2500); // This timing should be half of your animation cycle (5s / 2)
-
+      // Trigger fade in after text change
+      message.classList.add('message-transition');
+    }, 2500); // This timing should be synced with your fade-out duration
+  
     // Schedule the next message change
     setTimeout(changeMessage, 5000); // Continue with the 5-second cycle
   }
 
-  // Start the cycle after the first full animation
-  setTimeout(changeMessage, 5000);
+  // Initialize the first message with a fade-in effect
+  setTimeout(() => {
+    message.textContent = messages[currentMessageIndex];
+    message.classList.add('message-transition'); // Starts the fade-in effect
+    setTimeout(changeMessage, 5000); // Start the regular cycle after the initial display
+  }, 10); // A slight delay to ensure CSS transitions apply correctly for the initial fade-in
 }
 
 // once page loaded, shows message.
@@ -85,4 +86,3 @@ document.addEventListener('DOMContentLoaded', () => {
   showLoadingAnimation()
   showMessage()
 });
-
