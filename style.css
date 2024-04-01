@@ -9,23 +9,22 @@ body, html {
     background-color: #f0f0f0;
 }
 
-#loaderContainer {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
 .animation-container {
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    animation: fadeInOut 1s linear infinite;
   }
   
   @keyframes fadeInOut {
