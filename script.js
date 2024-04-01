@@ -78,7 +78,7 @@ function showMessage() {
     message.textContent = messages[currentMessageIndex];
     message.classList.add('message-transition'); // Starts the fade-in effect
     setTimeout(changeMessage, 5000); // Start the regular cycle after the initial display
-  }, 10); // A slight delay to ensure CSS transitions apply correctly for the initial fade-in
+  }, 0.1); // A slight delay to ensure CSS transitions apply correctly for the initial fade-in
 }
 
 // once page loaded, shows message.
