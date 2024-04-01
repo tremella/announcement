@@ -9,6 +9,16 @@ body, html {
     background-color: #f0f0f0;
 }
 
+.container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    height: 100%;
+    width: 100%;
+
+}
 .animation-container {
     position: relative;
     height: 40vh;
@@ -42,21 +52,10 @@ body, html {
   }
 
 /* HTML class message */
- /* .message {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    border: red 0.2em solid;
-    /* animation: fadeInOut 5s linear infinite; */
-  /* }  */
-
-  /* .message-transition {
-    animation: fadeInOut 5s linear infinite;
-  } */
 
   .message {
     transition: opacity 2.5s ease-in-out;
+    font-size: 1.5em;
     opacity: 0;
     position: absolute;
     left: 50%;
