@@ -21,8 +21,12 @@ body, html {
 }
 .animation-container {
     position: relative;
-    height: 40vh;
-    width: 40vw;
+    min-height: 200px;
+    min-width: 300px;
+    height: 50%;
+    width: 90%;
+    max-width:600px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,3 +69,19 @@ body, html {
     opacity: 1;
   }
   
+  @media (max-width: 600px) {    
+
+    .container {
+        margin-top: 20%; /* Reduce the top margin on small screens */
+    }
+
+    body, html {
+        display: block; /* Consider stacking elements vertically without flexbox */
+    }
+
+    .message {
+        font-size: 1em; /* Adjust font size for better readability */
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+}
