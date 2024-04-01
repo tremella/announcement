@@ -11,18 +11,21 @@ body, html {
 
 .animation-container {
     position: relative;
-    height: 80vh;
-    width: 80vw;
+    height: 40vh;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: blue 0.2em solid;
   }
 
   .ball {
     position: absolute;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    /* height: 30px; */
+    /* width: 30px; */
+    height: 2em;
+    width: 2em;
     background-color: orange;
     animation: fadeInOut 1s linear infinite;
   }
@@ -40,51 +43,14 @@ body, html {
   }
 
 /* HTML class message */
-/* .message {
+ .message {
     opacity: 1;
     transition: all 3s ease-in-out;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.slide-enter {
-    opacity: 1;
-    transform: translateX(-50%);
-}
-.slide-exit {
-    opacity: 1;
-    transform: translateX(-100%);
-} */
-
-#loadingMessages {
-  width: 200px;
-  position: relative; /* Add this to position .message absolutely within it */
-  height: 50px; /* Set a height to ensure there's space for the message */
-  overflow: hidden; /* Ensure overflowing content is not visible */
-  margin: 0 auto; /* Center the container */
-}
-
-.message {
-  position: absolute;
-  right: -100%; /* Start off the screen */
-  white-space: nowrap;
-  transition: transform 3s ease-in-out;
-
-  width: 100%; /* Ensure .message fills the container */
-  top: 0; /* Align to the top of the container */
-  opacity: 1;
-}
-
-.slide-enter {
-  /* Start from the right, outside the viewport */
-  right: 100%;
-}
-
-.slide-exit {
-  /* End to the left, outside the viewport */
-  transform: translateX(-80%); /* Slide out to the left */
-}
+    border: red 0.2em solid;
+  }
 
 
   
